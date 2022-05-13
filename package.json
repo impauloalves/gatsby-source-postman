@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-source-postman",
+  "version": "1.0.0",
+  "description": "Gatsby Source plugin for pulling Postman collections.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "homepage": "https://github.com/impauloalves/gatsby-source-postman/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/impauloalves/gatsby-source-postman/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/impauloalves/gatsby-source-postman"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-postman",
+    "postman"
+  ],
+  "author": "Paulo Alves <impauloalves@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.2.4"
+  }
+}
