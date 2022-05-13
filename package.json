@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-postman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby Source plugin for pulling Postman collections.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "author": "Paulo Alves <impauloalves@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^3.2.4"
+    "axios": "^0.27.2"
   }
 }

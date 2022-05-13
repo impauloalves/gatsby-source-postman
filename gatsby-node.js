@@ -1,18 +1,19 @@
-const fetch = require("node-fetch").default;
+const axios = require("axios");
 
 async function getCollection(collectionId, apiToken) {
-  let url = `https://api.getpostman.com/collections/${collectionId}`;
-  let response = await (
-    await fetch(url, {
+  const url = `https://api.getpostman.com/collections/${collectionId}`;
+  try {
+    const { data } = await axios(url, {
       method: "GET",
       headers: {
         Accept: "application/json",
         "x-api-key": apiToken,
       },
-    })
-  ).json();
-  if (response && response.error) throw Error(response.error.message);
-  return response.collection;
+    });
+    return data.collection;
+  } catch (error) {
+    throw new Error(JSON.stringify(error.response.data));
+  }
 }
 
 exports.sourceNodes = async (
